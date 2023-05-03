@@ -1,24 +1,54 @@
 
-import './App.css'
+import './App.css';
+import Person from './components/Person';
+import PersonClass from './components/PersonClass';
+
+const persons = [
+    {
+        name: 'Vlad',
+        surname: 'Kolo',
+        age: 35,
+    },
+    {
+        name: 'Manu',
+        surname: 'Manuel',
+        age: 30,
+    },
+    {
+        name: 'Lucía',
+        surname: 'Lunar',
+        age: 25,
+    },
+];
 
 function App() {
+    const firstPerson = persons[0];
+    const secondPerson = persons[1];
+    const thirdPerson = persons[2];
 
-return (
+    return (
+        <div>
+            <Person
+                name={firstPerson.name}
+                surname={firstPerson.surname}
+                age={firstPerson.age}
+            />
 
-<div className="App">
+            <Person
+                name={secondPerson.name}
+                surname={secondPerson.surname}
+                age={secondPerson.age}
+            />
 
-<Header />
+            <PersonClass
+                name={thirdPerson.name}
+                surname={thirdPerson.surname}
+                age={thirdPerson.age}
+            />
 
-<ProfileDescription />
-
-<Stories />
-
-<PostList />
-
-</div>
-
-);
-
+        </div>
+    );
 }
 
-export default App
+export default App;
+
