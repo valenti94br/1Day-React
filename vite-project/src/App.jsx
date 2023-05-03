@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/Header';
-import Home from './components/Home';
-import Person from './components/Person';
-import PersonClass from './components/PersonClass';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Person from './components/Person/Person';
+import PersonClass from './components/PersonClass/PersonClass';
 
 const persons = [
   {
